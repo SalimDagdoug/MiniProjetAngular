@@ -11,8 +11,7 @@
   .title-center {
     text-align: center;
   }
-  
-  /* Alignement des actions (bouton et recherche) */
+
   .header-actions {
     display: flex;
     gap: 1rem;
