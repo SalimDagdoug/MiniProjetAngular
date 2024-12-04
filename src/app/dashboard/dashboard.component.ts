@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
@@ -108,6 +109,7 @@ export class DashboardComponent implements OnInit {
     }
   }
 
+
   createPieChart(): void {
     const ctx = document.getElementById('myPieChart') as HTMLCanvasElement;
   
@@ -122,8 +124,8 @@ export class DashboardComponent implements OnInit {
             backgroundColor: this.stockData.map((_: any, index: number) => {
               // Créer une couleur différente pour chaque segment
               const colors = [
-                'rgba(255, 99, 132, 0.5)', 
                 'rgba(255, 206, 86, 0.5)',   // Jaune 
+                'rgba(255, 99, 132, 0.5)', 
                 'rgba(255, 159, 64, 0.5)',    // Orange                // Rouge
                 'rgba(54, 162, 235, 0.5)',   // Bleu
                 'rgba(255, 206, 86, 0.5)',   // Jaune
