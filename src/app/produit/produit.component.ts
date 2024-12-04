@@ -13,6 +13,8 @@ import { ServiceService, Produit } from '../service.service';
   templateUrl: './produit.component.html',
   styleUrls: ['./produit.component.css']
 })
+
+
 export class ProduitComponent implements OnInit {
   router: any;
  
@@ -31,7 +33,7 @@ export class ProduitComponent implements OnInit {
         this.products = data;
       },
       error: (err) => {
-        console.error('Error fetching products:', err);
+        console.error('Errors fetching products:', err);
       },
     });
   }
@@ -40,9 +42,9 @@ export class ProduitComponent implements OnInit {
   }
 
   deleteProduct(id: number): void {
-    if (confirm('Are you sure you want to delete this product?')) {
+    if (confirm('Are you sure you want to deletes this product?')) {
       this.productService.deleteProduit(id).subscribe(() => {
-        alert('Product deleted successfully');
+        alert('Products deleted successfully');
         this.loadProducts(); // Reload the product list
       });
     }

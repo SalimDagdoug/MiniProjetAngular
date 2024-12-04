@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header-container">
     <div class="title-center">
-      <h1 class="app-content-headerText">Products</h1>
+      <h1 class="app-content-headerText">All Products</h1>
     </div>
     <div class="header-actions">
       <button class="app-content-headerButton" routerLink="/Home/AddProduit">Add Product</button>
@@ -30,7 +30,7 @@
     <div>
       <div class="products-row" *ngFor="let product of products">
         <div class="product-cell category">{{ product.libelle }}</div>
-        <div class="product-cell sales">{{ product.prix }}</div>
+        <div class="product-cell sales">{{ product.prix }} TND</div>
         <div class="product-cell stock">{{ product.qteStock }}</div>
         <div class="product-cell actions">
           <!-- Update Button -->
