@@ -33,8 +33,8 @@ export class AjoutproduitComponent implements OnInit {
           this.router.navigate(['/Home/Produit']);
         },
         error: (error) => {
-          console.error('Erreur lors de l\'ajout du produit', error);
-          alert('Erreur lors de l\'ajout du produit.');
+          console.error('Erreurs lors de l\'ajout du produit', error);
+          alert('Erreurs lors de l\'ajout du produit.');
         }
       });
     } else {
