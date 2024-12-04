@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { StockdetailsComponent } from './stockdetails.component';
 
 describe('StockdetailsComponent', () => {
+  
   let component: StockdetailsComponent;
   let fixture: ComponentFixture<StockdetailsComponent>;
 

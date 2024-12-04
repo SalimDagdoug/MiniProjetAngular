@@ -44,7 +44,7 @@ import { RouterModule } from '@angular/router';
       this.getProducts();
     }
 
-
+// delete from stock
     deleteStock(id: number | undefined) {
       if (id === undefined) {
         console.error('Invalid stock ID');
@@ -79,7 +79,7 @@ import { RouterModule } from '@angular/router';
     console.error('No product selected');
     return;
   }
-
+//----------------------- add stock----------------------------
   const stockData = {
     produits: [{ id: this.selectedProduct }],
     qte: this.stock.qte,

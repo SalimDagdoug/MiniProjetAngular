@@ -25,10 +25,10 @@ export class StockdetailsComponent implements OnInit {
     private stockService: StockService,
     private router: Router
   ) { }
-
+//------------------------
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      // Ensure the id is treated as a number
+      
       this.stockId = Number(params.get('id'));  // Convert the string to a number
       if (this.stockId) {
         this.getStockDetails(this.stockId); // Fetch stock details if id exists
