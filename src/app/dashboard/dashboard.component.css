@@ -1,0 +1,64 @@
+/* .container{
+    width: 600px;
+    height: 500px;
+} */
+h2,hr{
+    color: aliceblue;
+    text-align: center;
+}
+/* Style général du tableau */
+.table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;  /* Fond gris clair pour tout le tableau */
+  }
+  
+  /* Style des en-têtes du tableau */
+  .table th {
+    background-color: #4CAF50;  /* Fond vert pour les en-têtes */
+    color: white;               /* Texte blanc pour les en-têtes */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;     /* Bordure légère pour les cellules */
+  }
+  
+  /* Style des cellules du tableau */
+  .table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style des lignes paires (pour une alternance de couleur) */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Fond gris clair pour les lignes paires */
+  }
+  
+  /* Style des lignes impaires */
+  .table tr:nth-child(odd) {
+    background-color: #ffffff;  /* Fond blanc pour les lignes impaires */
+  }
+  
+  /* Style au survol des lignes */
+  .table tr:hover {
+    background-color: #ddd;     /* Fond gris clair au survol */
+  }
+  
+  /* Couleur du texte des cellules */
+  .table td {
+    color: #333;  /* Texte gris foncé */
+  }
+  
+  /* Si vous voulez changer la couleur du texte pour les en-têtes */
+  .table th {
+    color: white;  /* Texte en blanc pour les en-têtes */
+  }
+  
+  .chart {
+    width: 100% !important; /* Ajuster la largeur du graphique */
+    height: 300px !important; /* Ajuster la hauteur du graphique */
+  }
+  .char2{
+    height: 100px;
+  }
+  

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Update Produit</h2>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="onUpdate()">
+        <div class="mb-3">
+          <label for="libelle" class="form-label">Libelle:</label>
+          <input
+            type="text"
+            id="libelle"
+            class="form-control"
+            [(ngModel)]="produit.libelle"
+            name="libelle"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="prix" class="form-label">Prix:</label>
+          <input
+            type="number"
+            id="prix"
+            class="form-control"
+            [(ngModel)]="produit.prix"
+            name="prix"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="qteStock" class="form-label">Quantité Stock:</label>
+          <input
+            type="number"
+            id="qteStock"
+            class="form-control"
+            [(ngModel)]="produit.qteStock"
+            name="qteStock"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Update</button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            (click)="onCancel()"
+            style="margin-left: 10px;"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

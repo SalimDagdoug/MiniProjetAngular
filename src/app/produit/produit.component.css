@@ -1,0 +1,46 @@
+/* Conteneur principal */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Centrer le titre */
+  .title-center {
+    text-align: center;
+  }
+  
+  /* Alignement des actions (bouton et recherche) */
+  .header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Bouton d'ajout */
+  .app-content-headerButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .app-content-headerButton:hover {
+    background-color:#a975dd;
+  }
+  
+  /* Barre de recherche */
+  .search-bar {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  

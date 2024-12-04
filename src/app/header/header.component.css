@@ -1,0 +1,20 @@
+.app-content-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #a975dd; /* Couleur de fond si nécessaire */
+  }
+  
+  .user-account,
+  .notifications {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .user-account svg,
+  .notifications svg {
+    width: 24px;
+    height: 24px;
+  }
+  

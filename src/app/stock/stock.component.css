@@ -1,0 +1,224 @@
+/* Conteneur principal */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Centrer le titre */
+  .title-center {
+    text-align: center;
+  }
+  
+  /* Alignement des actions (bouton et recherche) */
+  .header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Bouton d'ajout */
+  .app-content-headerButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .app-content-headerButton:hover {
+    background-color: #a975dd;
+  }
+  
+  /* Barre de recherche */
+  .search-bar {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  /* Container for the entire form */
+.header-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Form group for each input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+/* Input styles */
+.search-bar {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Button styling */
+.app-content-headerButton {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.app-content-headerButton:hover {
+  background-color: #0056b3;
+}
+
+.app-content-headerButton:active {
+  background-color: #003f7f;
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures the form fields are responsive */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  flex: 1 1 25%;  /* Ensures that each input/select takes up 25% of the available width */
+  min-width: 200px;  /* Sets a minimum width to avoid shrinking too much on smaller screens */
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-field,
+.select-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus,
+.select-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  align-self: center;
+  padding: 12px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.btn-danger {
+  background-color: #dc3545;  /* Bootstrap's danger color */
+  color: white;  /* Text color */
+  border: 1px solid #dc3545;  /* Border color matching the background */
+  padding: 10px 20px;  /* Padding around the text */
+  font-size: 16px;  /* Font size */
+  border-radius: 4px;  /* Rounded corners */
+  cursor: pointer;  /* Pointer cursor on hover */
+  text-align: center;  /* Center text inside the button */
+  display: inline-block;  /* Button displays inline with other elements */
+  transition: background-color 0.3s ease;  /* Smooth transition effect */
+}
+
+/* Hover effect */
+.btn-danger:hover {
+  background-color: #c82333;  /* Darker shade on hover */
+  border-color: #bd2130;  /* Darker border on hover */
+}
+
+/* Focus effect (when the button is focused via keyboard) */
+.btn-danger:focus {
+  outline: none;  /* Remove the default outline */
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);  /* Add a shadow to highlight focus */
+}
+
+
+.btn-green {
+  background-color: #309c1a;  /* Bootstrap's danger color */
+  color: white;  /* Text color */
+  border: 1px solid #309c1a;  /* Border color matching the background */
+  padding: 10px 20px;  /* Padding around the text */
+  font-size: 16px;  /* Font size */
+  border-radius: 4px;  /* Rounded corners */
+  cursor: pointer;  /* Pointer cursor on hover */
+  text-align: center;  /* Center text inside the button */
+  display: inline-block;  /* Button displays inline with other elements */
+  transition: background-color 0.3s ease;  /* Smooth transition effect */
+}
+
+/* Hover effect */
+.btn-green:hover {
+  background-color: #309c1a;  /* Darker shade on hover */
+  border-color: #309c1a;  /* Darker border on hover */
+}
+
+/* Focus effect (when the button is focused via keyboard) */
+.btn-green:focus {
+  outline: none;  /* Remove the default outline */
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);  /* Add a shadow to highlight focus */
+}

@@ -1,0 +1,38 @@
+<div *ngIf="stockDetails; else loading">
+    <h2>Stock Details</h2>
+  
+    <!-- Quantity Field -->
+    <div class="header-actions">
+      <div class="form-group">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input [(ngModel)]="stockDetails.qte" placeholder="Quantity" type="number" aria-label="Quantity" class="form-control input-field" />
+      </div>
+    
+      <!-- Products Dropdown -->
+      <div class="form-group">
+        <label for="products" class="form-label">Products</label>
+        <select [(ngModel)]="selectedProduct" aria-label="Select Product" id="products" class="form-control select-field">
+          <option *ngFor="let produit of products" [value]="produit.id">{{ produit.libelle }}</option>
+        </select>
+      </div>
+    
+      <!-- Action Dropdown -->
+      <div class="form-group">
+        <label for="action" class="form-label">Action</label>
+        <select [(ngModel)]="stockDetails.action" id="action" aria-label="Action" class="form-control select-field">
+          <option [value]="true">Entrée</option>
+          <option [value]="false">Sortie</option>
+        </select>
+      </div>
+    
+      <!-- Update Button -->
+      <div class="button-container">
+        <button (click)="updateStock()" class="btn btn-primary btn-lg">Update Stock</button>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #loading>
+    <p>Loading stock details...</p>
+  </ng-template>
+  

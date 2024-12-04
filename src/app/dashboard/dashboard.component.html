@@ -1,0 +1,62 @@
+<div class="container m-5">
+    <div class="row">
+      <!-- Tableau des produits à gauche -->
+      <div class="col-6">
+        <h2>Total des produits: {{ totalProduits }}</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Libellé</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Quantité en stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let produit of produits">
+              <td>{{ produit.libelle }}</td>
+              <td>{{ produit.prix }} €</td>
+              <td>{{ produit.qteStock }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Graphique à droite -->
+      <div class="col-6">
+        <canvas id="myChart" class="chart"></canvas>
+      </div>
+    </div>
+  <hr>
+    <div class="row char2">
+      <!-- Tableau des stocks à gauche -->
+      <div class="col-6">
+        <h2>Total des stocks: {{ totalStock }}</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Libellé</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Quantité </th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stock of stockData">
+              <td>{{ stock.produits[0].libelle }}</td>
+              <td>{{ stock.produits[0].prix }} €</td>
+              <td>{{ stock.produits[0].qteStock }}</td>
+              <td>
+                <span *ngIf="stock.action" class="badge bg-success">Entree</span>
+                <span *ngIf="!stock.action" class="badge bg-danger">Sortie</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="col-6">
+        <canvas class="chart" id="myPieChart"></canvas>
+      </div>
+    </div>
+  </div>
+  
